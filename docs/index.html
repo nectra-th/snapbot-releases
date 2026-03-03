@@ -3,188 +3,579 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnapBot — Desktop Automation Tool</title>
+  <title>SnapBot — All-in-One Desktop & Game Automation</title>
+  <meta name="description" content="SnapBot is the all-in-one desktop and game automation platform with image recognition. See it, match it, automate it. Lifetime updates included.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1>SnapBot</h1>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#howto">How To</a>
-        <a href="#download">Download</a>
-      </nav>
-    </div>
-  </header>
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <!-- SnapBot Logo SVG — crosshair + bot -->
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect x="4" y="4" width="24" height="24" rx="6" stroke="url(#logoGrad)" stroke-width="2"/>
+        <circle cx="16" cy="16" r="5" stroke="url(#logoGrad)" stroke-width="2"/>
+        <line x1="16" y1="2" x2="16" y2="8" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="16" y1="24" x2="16" y2="30" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="2" y1="16" x2="8" y2="16" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="24" y1="16" x2="30" y2="16" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+            <stop offset="0%" stop-color="#00a3ff"/>
+            <stop offset="100%" stop-color="#00e5c7"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      SnapBot
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#guide">Guide</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/nectra-th/snapbot-releases/releases/latest" class="btn btn-primary nav-cta">Download Free</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="hero" id="download">
-    <div class="container">
-      <h2>SnapBot</h2>
-      <p class="tagline">Automate any desktop application with visual template matching.</p>
-      <a class="btn-download" href="https://github.com/nectra-th/snapbot-releases/releases/latest">
-        Download SnapBot
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="badge badge-accent">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        All-in-One Automation Platform
+      </span>
+    </div>
+
+    <h1>
+      See It. Match It.<br>
+      <span class="text-gradient">Automate It.</span>
+    </h1>
+
+    <p class="hero-tagline">
+      The most powerful desktop & game automation tool with visual image recognition.
+      No coding required. Lifetime updates included.
+    </p>
+
+    <div class="hero-cta">
+      <a href="https://github.com/nectra-th/snapbot-releases/releases/latest" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Free
       </a>
-      <span class="version-tag">Windows 10/11 &mdash; Free</span>
+      <a href="#features" class="btn btn-secondary">
+        Explore Features
+      </a>
     </div>
-  </section>
 
-  <!-- Features -->
-  <section class="features" id="features">
-    <div class="container">
-      <h3>Features</h3>
-      <div class="feature-grid">
+    <div class="hero-meta">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+        Windows 10/11
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Safe & Clean
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+        Lifetime Updates
+      </span>
+    </div>
+  </div>
+</section>
 
-        <div class="feature-card">
-          <div class="feature-icon">🖱️</div>
-          <h4>Click Automation</h4>
-          <p>Draw a search area and an image template. When the image is found on screen, SnapBot clicks it automatically.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">↔️</div>
-          <h4>Drag &amp; Drop</h4>
-          <p>Match a source image and drag it to a destination. Perfect for inventory management and drag-based interfaces.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">⏱️</div>
-          <h4>Wait &amp; Click</h4>
-          <p>Wait for an image to appear for a specified duration before clicking. Great for loading screens and popups.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">🔀</div>
-          <h4>Conditional (If/Else)</h4>
-          <p>Check if one image exists, and if not, click another. Build smart decision-making automation flows.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">⌨️</div>
-          <h4>HotKey Actions</h4>
-          <p>When an image is found, fire a key sequence instead of clicking. Supports special keys with DOWN/UP/PRESS.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h4>Multi-Template</h4>
-          <p>Match multiple source images to find the best one, then drag or click. Handles dynamic interfaces.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">👻</div>
-          <h4>Background Mode</h4>
-          <p>Click and type in the target window without moving your real mouse. Use your PC while automation runs.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">📋</div>
-          <h4>Macro Recorder</h4>
-          <p>Record and play back sequences of actions. Chain multiple steps into reusable macros.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">📁</div>
-          <h4>Profiles</h4>
-          <p>Save different configurations for different applications. Switch between profiles from the launcher.</p>
-        </div>
-
+<!-- ═══════════════════ STATS BAR ═══════════════════ -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <h3 class="text-gradient">9+</h3>
+        <p>Automation Types</p>
+      </div>
+      <div class="stat-item fade-in">
+        <h3 class="text-gradient-purple">0ms</h3>
+        <p>Coding Required</p>
+      </div>
+      <div class="stat-item fade-in">
+        <h3 class="text-gradient">∞</h3>
+        <p>Lifetime Updates</p>
+      </div>
+      <div class="stat-item fade-in">
+        <h3 class="text-gradient-purple">30fps</h3>
+        <p>Real-Time Scanning</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- How-To -->
-  <section class="howto" id="howto">
-    <div class="container">
-      <h3>Getting Started</h3>
+<!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <span class="section-label">How It Works</span>
+    <h2 class="section-title">Three Steps to Full Automation</h2>
+    <p class="section-desc">No scripting. No complex setup. Just draw, configure, and let SnapBot handle the rest.</p>
 
-      <div class="step">
-        <span class="step-number">1</span>
-        <h4>Download &amp; Launch</h4>
-        <p>Download SnapBot.exe and run it. Windows may show a SmartScreen warning for unsigned apps &mdash; click "More info" then "Run anyway". The app will request admin privileges for window capture.</p>
+    <div class="steps-row stagger">
+      <!-- Step 1 -->
+      <div class="step-card fade-in" style="position:relative">
+        <div class="step-num step-num-1">1</div>
+        <div class="step-icon step-icon-1">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00a3ff" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+        </div>
+        <h4>Select & Draw</h4>
+        <p>Pick your target window. Draw a search area on the live preview, then draw the image you want to match inside it.</p>
+        <div class="step-connector"></div>
       </div>
 
-      <div class="step">
-        <span class="step-number">2</span>
-        <h4>Select a Target Window</h4>
-        <p>Click "Select Window" in the toolbar and pick the application you want to automate from the list. The preview panel will show a live feed of the target window.</p>
+      <!-- Step 2 -->
+      <div class="step-card fade-in" style="position:relative">
+        <div class="step-num step-num-2">2</div>
+        <div class="step-icon step-icon-2">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h4>Configure Action</h4>
+        <p>Choose the action: click, drag, type keys, wait, or conditional logic. Set thresholds, delays, and offsets.</p>
+        <div class="step-connector"></div>
       </div>
 
-      <div class="step">
-        <span class="step-number">3</span>
-        <h4>Create a Click Template</h4>
-        <p>Click the "Click" button in the sidebar. Draw a rectangle on the preview to define the <strong>search area</strong> — where SnapBot looks for your image. Then draw a smaller rectangle inside for the <strong>template image</strong> — the image SnapBot will match. You can also click inside the search area to use the entire area as the template.</p>
-        <div class="tip">Tip: Make the search area as small as possible for faster matching. The template should be a unique, stable part of the UI.</div>
-      </div>
-
-      <div class="step">
-        <span class="step-number">4</span>
-        <h4>Adjust the Threshold</h4>
-        <p>Each template card shows a match percentage bar. Drag the threshold slider to set how similar the on-screen image must be to your template. Higher = stricter matching (fewer false positives). Default is 65%.</p>
-      </div>
-
-      <div class="step">
-        <span class="step-number">5</span>
+      <!-- Step 3 -->
+      <div class="step-card fade-in">
+        <div class="step-num step-num-3">3</div>
+        <div class="step-icon step-icon-3">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00e5c7" stroke-width="2" stroke-linecap="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
         <h4>Hit Play</h4>
-        <p>Press F9 or click the Play button. SnapBot will continuously scan the target window and perform actions when templates match. Press F9 again to stop.</p>
-        <div class="tip">Tip: Use "BG" mode (background) to automate without moving your real mouse. Use "Mouse" mode if background clicking doesn't work with your target app.</div>
+        <p>Press F9 and SnapBot scans in real-time, matches your templates, and fires actions automatically. Use your PC freely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FEATURES ═══════════════════ -->
+<section class="features" id="features">
+  <div class="container">
+    <span class="section-label">Features</span>
+    <h2 class="section-title">Everything You Need. One Platform.</h2>
+    <p class="section-desc">From simple clicks to complex conditional logic — SnapBot covers every automation scenario.</p>
+
+    <div class="feature-grid stagger">
+
+      <!-- Click -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00a3ff" stroke-width="2" stroke-linecap="round"><path d="M9 3.5V2"/><path d="M5.06 5.06 3.95 3.95"/><path d="M3.5 9H2"/><path d="M5.06 12.94 3.95 14.05"/><path d="M14 4l-1.3 4.4a1 1 0 0 0 .3 1 1 1 0 0 0 1 .3L18.4 8.4"/><path d="m9 9 7.7 7.7a1 1 0 0 0 1.4 0l2.6-2.6a1 1 0 0 0 0-1.4L13 5"/><path d="m9 9-3 10 4-3 3-4"/></svg>
+        </div>
+        <h4>Smart Click</h4>
+        <p>Image-based clicking that adapts to UI changes. Not fixed coordinates — SnapBot finds the image wherever it moves.</p>
       </div>
 
-      <div class="step">
-        <span class="step-number">6</span>
-        <h4>Create a Drag Template</h4>
-        <p>Click "Drag" to create a drag-and-drop action. First draw the source area and source image, then draw the destination area and destination image. When both match, SnapBot drags from source to destination.</p>
+      <!-- Drag -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon purple">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 0 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 13"/></svg>
+        </div>
+        <h4>Drag & Drop</h4>
+        <p>Match source and destination images. Automate inventory management, drag-based UIs, and complex multi-point interactions.</p>
       </div>
 
-      <div class="step">
-        <span class="step-number">7</span>
-        <h4>Create a Wait Template</h4>
-        <p>Click "Wait" to create a delayed click. Draw the area and image like a Click template. Set the wait duration — SnapBot will only click after the image has been visible for that long.</p>
+      <!-- Wait -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon cyan">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5c7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h4>Wait & Click</h4>
+        <p>Wait for an image to appear for a configurable duration before acting. Perfect for loading screens, popups, and cooldowns.</p>
       </div>
 
-      <div class="step">
-        <span class="step-number">8</span>
-        <h4>Create a HotKey Template</h4>
-        <p>Click "HotKey" to fire keyboard input when an image matches. Draw area and image, then add key sequences in the card. Type text and press Enter for text input. Type "/" to open the special key picker (F1-F12, Shift, Ctrl, etc.). Right-click chips to set DOWN/UP/PRESS.</p>
+      <!-- Conditional -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="m21 3-8.5 8.5"/><path d="M3 3l8.5 8.5"/><path d="M3 16v5h5"/><path d="m3 21 8.5-8.5"/><path d="M21 16v5h-5"/><path d="m21 21-8.5-8.5"/></svg>
+        </div>
+        <h4>Conditional Logic</h4>
+        <p>If/else automation. Check if an image exists — if not, click an alternative. Build smart decision trees without code.</p>
       </div>
 
-      <div class="step">
-        <span class="step-number">9</span>
-        <h4>Create a Conditional Template</h4>
-        <p>Click "Cond" for if/else logic. Draw a "check" area and image (the condition), then draw a "click" area and image (the action). If the check image is NOT found, SnapBot clicks the action image.</p>
+      <!-- HotKey -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00a3ff" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/><path d="M18 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="M7 16h10"/></svg>
+        </div>
+        <h4>HotKey Sequences</h4>
+        <p>Fire complex key combinations when an image matches. Text input, special keys (F1-F12, Shift, Ctrl), with DOWN/UP/PRESS control.</p>
       </div>
 
-      <div class="step">
-        <span class="step-number">10</span>
+      <!-- Multi-Template -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon purple">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/></svg>
+        </div>
         <h4>Multi-Template</h4>
-        <p>Switch to the "Multi" tab for advanced multi-image matching. Click "Drag-Drop" or "Click". Draw source and destination areas, then add multiple images to each. SnapBot finds the best matching source and drags/clicks accordingly.</p>
+        <p>Match against multiple images simultaneously. The best match wins. Handle dynamic UIs where elements change appearance.</p>
       </div>
 
-      <div class="step">
-        <span class="step-number">11</span>
-        <h4>Tips &amp; Tricks</h4>
-        <p>
-          <strong>Reorder:</strong> Drag cards to change execution order. Templates are checked top to bottom.<br>
-          <strong>Enable/Disable:</strong> Toggle individual templates on/off with the eye icon.<br>
-          <strong>Offset:</strong> Click the crosshair button to pick an exact click point offset from the template center.<br>
-          <strong>No Repeat:</strong> Enable "no repeat" to fire a template only once per play session.<br>
-          <strong>Delay:</strong> Add before/after delays to pace your automation.<br>
-          <strong>Scan Interval:</strong> Adjust the toolbar slider to control how fast SnapBot scans (lower = faster but more CPU).
-        </p>
+      <!-- Background Mode -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 9h.01"/></svg>
+        </div>
+        <h4>Background Mode</h4>
+        <p>Run automation silently without moving your real mouse. Browse, chat, or work while SnapBot handles everything in the background.</p>
+      </div>
+
+      <!-- Macro -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon cyan">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5c7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="1"/><path d="M5 12s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5"/><path d="M20 4L4 20"/></svg>
+        </div>
+        <h4>Macro Recorder</h4>
+        <p>Record sequences of mouse and keyboard actions. Play them back with customizable speed and repeat settings.</p>
+      </div>
+
+      <!-- Profiles -->
+      <div class="feature-card fade-in">
+        <div class="feature-card-icon orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect x="6" y="10" width="4" height="10" rx="1"/><rect x="14" y="6" width="4" height="14" rx="1"/></svg>
+        </div>
+        <h4>Profiles</h4>
+        <p>Save separate configurations per game or application. Switch instantly from the launcher. Each profile gets its own templates.</p>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 SnapBot. All rights reserved.</p>
+<!-- ═══════════════════ COMPARISON ═══════════════════ -->
+<section class="comparison">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block">Why SnapBot</span>
+    <h2 class="section-title" style="text-align:center">Built Different</h2>
+    <p class="section-desc" style="text-align:center">Unlike other tools, SnapBot combines image recognition, background automation, and a visual no-code interface in one platform.</p>
+
+    <div class="comparison-grid stagger">
+      <div class="comp-card comp-highlight fade-in">
+        <h4>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00a3ff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          Image Recognition vs. Fixed Coordinates
+        </h4>
+        <p>Traditional macro tools replay at exact screen coordinates. If a window moves, they break. SnapBot finds images wherever they are — adapting to resolution changes, window positions, and UI updates.</p>
+      </div>
+
+      <div class="comp-card comp-highlight fade-in">
+        <h4>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          Visual No-Code vs. Scripting
+        </h4>
+        <p>AutoHotkey requires scripting. Macro Recorder requires sequences. SnapBot lets you draw on a live preview — point at what you see, and it automates. Zero learning curve.</p>
+      </div>
+
+      <div class="comp-card comp-highlight fade-in">
+        <h4>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00e5c7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          Background Mode vs. Mouse Lock
+        </h4>
+        <p>Most automation tools take over your mouse. SnapBot's background mode sends clicks and keystrokes directly to the target window — you keep full control of your PC.</p>
+      </div>
+
+      <div class="comp-card comp-highlight fade-in">
+        <h4>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+          Lifetime License vs. Subscriptions
+        </h4>
+        <p>Other tools charge $5-10/month. SnapBot is a one-time purchase with lifetime updates. No recurring fees. No feature gating. Everything included, forever.</p>
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- ═══════════════════ TRUST ═══════════════════ -->
+<section class="trust">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label">Safe & Secure</span>
+      <h2 class="section-title">Your Safety Is Non-Negotiable</h2>
+    </div>
+
+    <div class="trust-grid stagger">
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div>
+          <h4>No Memory Injection</h4>
+          <p>SnapBot uses pixel-level image recognition only. It never reads or writes to game memory. Your accounts stay safe.</p>
+        </div>
+      </div>
+
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h4>Clean & Portable</h4>
+          <p>Single .exe file with no installer needed. No registry changes, no background services. Delete the file and it's gone.</p>
+        </div>
+      </div>
+
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <div>
+          <h4>Lifetime Updates</h4>
+          <p>Every update is free, forever. Auto-update checks on startup. You always have the latest features and fixes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ GETTING STARTED ═══════════════════ -->
+<section class="guide" id="guide">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label">Getting Started</span>
+      <h2 class="section-title">Up and Running in Minutes</h2>
+      <p class="section-desc">Follow these steps to set up your first automation.</p>
+    </div>
+
+    <div class="guide-steps">
+      <div class="guide-step open">
+        <div class="guide-step-header">
+          <div class="guide-step-num">1</div>
+          <h4>Download & Launch</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p>Download SnapBot.exe and run it. Windows SmartScreen may show a warning for new apps — click "More info" then "Run anyway". The app requests admin privileges for window capture access.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step-header">
+          <div class="guide-step-num">2</div>
+          <h4>Select Your Target Window</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p>Click "Select Window" in the toolbar and pick the application or game you want to automate. The preview panel shows a live feed of the target window.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step-header">
+          <div class="guide-step-num">3</div>
+          <h4>Create Your First Template</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p>Click "Click" in the sidebar draw bar. Draw a rectangle on the preview for the <strong>search area</strong>, then draw a smaller rectangle inside for the <strong>template image</strong>. You can also just click inside the area to use it entirely as the template.</p>
+          <div class="guide-tip">Tip: Make search areas as small as possible for faster matching. Templates should be unique, stable parts of the UI.</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step-header">
+          <div class="guide-step-num">4</div>
+          <h4>Adjust the Match Threshold</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p>Each template card shows a live match percentage bar. Drag the threshold slider to control sensitivity — higher values mean stricter matching (fewer false positives). Default is 65%.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step-header">
+          <div class="guide-step-num">5</div>
+          <h4>Press Play</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p>Press F9 or click Play. SnapBot continuously scans and performs actions when templates match. Press F9 again to stop. Use "BG" mode to automate without moving your real mouse.</p>
+          <div class="guide-tip">Tip: Use "BG" (background) mode to keep using your PC while automation runs. Switch to "Mouse" mode if background clicking doesn't work with your target app.</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step-header">
+          <div class="guide-step-num">6</div>
+          <h4>Explore Advanced Features</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p><strong>Drag:</strong> Draw source + destination for drag-and-drop actions.<br>
+          <strong>Wait:</strong> Click only after an image has been visible for N seconds.<br>
+          <strong>HotKey:</strong> Fire keyboard sequences when an image matches. Type "/" for special keys.<br>
+          <strong>Cond:</strong> If/else logic — check one image, click another if not found.<br>
+          <strong>Multi:</strong> Match against multiple images simultaneously.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="guide-step-header">
+          <div class="guide-step-num">7</div>
+          <h4>Tips & Tricks</h4>
+          <span class="guide-step-toggle">▾</span>
+        </div>
+        <div class="guide-step-body">
+          <p><strong>Reorder:</strong> Drag cards to change execution order (top = highest priority).<br>
+          <strong>No Repeat:</strong> Fire a template only once per session.<br>
+          <strong>Offset:</strong> Click the crosshair to pick an exact click point relative to the match.<br>
+          <strong>Delay:</strong> Add before/after delays to pace automation.<br>
+          <strong>Scan Interval:</strong> Lower = faster scanning but more CPU usage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Is SnapBot safe to use?</h4>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          <p>Yes. SnapBot uses pixel-level image recognition only — it never reads or injects into game memory. It's a single .exe with no installer, no registry modifications, and no background services. It's as safe as taking a screenshot.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Will I get banned from games?</h4>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          <p>SnapBot operates at the pixel level and does not modify game files or memory. However, automating games may violate their Terms of Service. Use SnapBot responsibly and check each game's automation policy. We recommend using it for single-player games and desktop productivity tasks.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>What does "lifetime updates" mean?</h4>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          <p>Every future update to SnapBot is included at no additional cost. The app automatically checks for updates on startup. You always get the latest features, bug fixes, and improvements — forever.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>What games and applications does it work with?</h4>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          <p>SnapBot works with any application that renders to a window on Windows 10/11. This includes games (both windowed and borderless-windowed), browsers, desktop apps, and more. Some games with strict anti-cheat (kernel-level) may block window capture — use background mode as a fallback.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Does it work with any screen resolution?</h4>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          <p>Yes. SnapBot captures the target window directly, not your monitor. Templates match based on the window content regardless of your screen resolution or DPI scaling.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Can I use it while doing other things?</h4>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="faq-a">
+          <p>Absolutely. Background mode sends clicks and keystrokes directly to the target window without moving your real mouse. You can browse, chat, or work on other tasks while SnapBot automates in the background.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Ready to <span class="text-gradient">Automate Everything</span>?</h2>
+    <p>Download SnapBot free and start automating in under 60 seconds.</p>
+    <div class="hero-cta">
+      <a href="https://github.com/nectra-th/snapbot-releases/releases/latest" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Free
+      </a>
+      <a href="#guide" class="btn btn-secondary">Read the Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">&copy; 2026 SnapBot. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="https://github.com/nectra-th/snapbot-releases/releases">Releases</a>
+        <a href="#guide">Guide</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+<script>
+// ── Scroll animations ──────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ── Sticky header shadow ────────────────────────────────────
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// ── Accordion: Guide steps ──────────────────────────────────
+document.querySelectorAll('.guide-step').forEach(step => {
+  step.querySelector('.guide-step-header').addEventListener('click', () => {
+    const wasOpen = step.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.guide-step').forEach(s => s.classList.remove('open'));
+    // Toggle clicked
+    if (!wasOpen) step.classList.add('open');
+  });
+});
+
+// ── Accordion: FAQ ──────────────────────────────────────────
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
 
 </body>
 </html>
