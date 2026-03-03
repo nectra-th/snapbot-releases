@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "download_url": "https://github.com/nectra-th/snapbot-releases/releases/download/v1.0.0/SnapBot.exe",
+  "changelog": "Initial release",
+  "required": false,
+  "blocked": false,
+  "block_message": ""
+}

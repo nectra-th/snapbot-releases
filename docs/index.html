@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapBot — Desktop Automation Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>SnapBot</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#howto">How To</a>
+        <a href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="download">
+    <div class="container">
+      <h2>SnapBot</h2>
+      <p class="tagline">Automate any desktop application with visual template matching.</p>
+      <a class="btn-download" href="https://github.com/nectra-th/snapbot-releases/releases/latest">
+        Download SnapBot
+      </a>
+      <span class="version-tag">Windows 10/11 &mdash; Free</span>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h3>Features</h3>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">🖱️</div>
+          <h4>Click Automation</h4>
+          <p>Draw a search area and an image template. When the image is found on screen, SnapBot clicks it automatically.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">↔️</div>
+          <h4>Drag &amp; Drop</h4>
+          <p>Match a source image and drag it to a destination. Perfect for inventory management and drag-based interfaces.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h4>Wait &amp; Click</h4>
+          <p>Wait for an image to appear for a specified duration before clicking. Great for loading screens and popups.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔀</div>
+          <h4>Conditional (If/Else)</h4>
+          <p>Check if one image exists, and if not, click another. Build smart decision-making automation flows.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⌨️</div>
+          <h4>HotKey Actions</h4>
+          <p>When an image is found, fire a key sequence instead of clicking. Supports special keys with DOWN/UP/PRESS.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h4>Multi-Template</h4>
+          <p>Match multiple source images to find the best one, then drag or click. Handles dynamic interfaces.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👻</div>
+          <h4>Background Mode</h4>
+          <p>Click and type in the target window without moving your real mouse. Use your PC while automation runs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h4>Macro Recorder</h4>
+          <p>Record and play back sequences of actions. Chain multiple steps into reusable macros.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📁</div>
+          <h4>Profiles</h4>
+          <p>Save different configurations for different applications. Switch between profiles from the launcher.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How-To -->
+  <section class="howto" id="howto">
+    <div class="container">
+      <h3>Getting Started</h3>
+
+      <div class="step">
+        <span class="step-number">1</span>
+        <h4>Download &amp; Launch</h4>
+        <p>Download SnapBot.exe and run it. Windows may show a SmartScreen warning for unsigned apps &mdash; click "More info" then "Run anyway". The app will request admin privileges for window capture.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">2</span>
+        <h4>Select a Target Window</h4>
+        <p>Click "Select Window" in the toolbar and pick the application you want to automate from the list. The preview panel will show a live feed of the target window.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">3</span>
+        <h4>Create a Click Template</h4>
+        <p>Click the "Click" button in the sidebar. Draw a rectangle on the preview to define the <strong>search area</strong> — where SnapBot looks for your image. Then draw a smaller rectangle inside for the <strong>template image</strong> — the image SnapBot will match. You can also click inside the search area to use the entire area as the template.</p>
+        <div class="tip">Tip: Make the search area as small as possible for faster matching. The template should be a unique, stable part of the UI.</div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">4</span>
+        <h4>Adjust the Threshold</h4>
+        <p>Each template card shows a match percentage bar. Drag the threshold slider to set how similar the on-screen image must be to your template. Higher = stricter matching (fewer false positives). Default is 65%.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">5</span>
+        <h4>Hit Play</h4>
+        <p>Press F9 or click the Play button. SnapBot will continuously scan the target window and perform actions when templates match. Press F9 again to stop.</p>
+        <div class="tip">Tip: Use "BG" mode (background) to automate without moving your real mouse. Use "Mouse" mode if background clicking doesn't work with your target app.</div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">6</span>
+        <h4>Create a Drag Template</h4>
+        <p>Click "Drag" to create a drag-and-drop action. First draw the source area and source image, then draw the destination area and destination image. When both match, SnapBot drags from source to destination.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">7</span>
+        <h4>Create a Wait Template</h4>
+        <p>Click "Wait" to create a delayed click. Draw the area and image like a Click template. Set the wait duration — SnapBot will only click after the image has been visible for that long.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">8</span>
+        <h4>Create a HotKey Template</h4>
+        <p>Click "HotKey" to fire keyboard input when an image matches. Draw area and image, then add key sequences in the card. Type text and press Enter for text input. Type "/" to open the special key picker (F1-F12, Shift, Ctrl, etc.). Right-click chips to set DOWN/UP/PRESS.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">9</span>
+        <h4>Create a Conditional Template</h4>
+        <p>Click "Cond" for if/else logic. Draw a "check" area and image (the condition), then draw a "click" area and image (the action). If the check image is NOT found, SnapBot clicks the action image.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">10</span>
+        <h4>Multi-Template</h4>
+        <p>Switch to the "Multi" tab for advanced multi-image matching. Click "Drag-Drop" or "Click". Draw source and destination areas, then add multiple images to each. SnapBot finds the best matching source and drags/clicks accordingly.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">11</span>
+        <h4>Tips &amp; Tricks</h4>
+        <p>
+          <strong>Reorder:</strong> Drag cards to change execution order. Templates are checked top to bottom.<br>
+          <strong>Enable/Disable:</strong> Toggle individual templates on/off with the eye icon.<br>
+          <strong>Offset:</strong> Click the crosshair button to pick an exact click point offset from the template center.<br>
+          <strong>No Repeat:</strong> Enable "no repeat" to fire a template only once per play session.<br>
+          <strong>Delay:</strong> Add before/after delays to pace your automation.<br>
+          <strong>Scan Interval:</strong> Adjust the toolbar slider to control how fast SnapBot scans (lower = faster but more CPU).
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 SnapBot. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
